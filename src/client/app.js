@@ -1,19 +1,18 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
-import MainNav from './navbar';
+//import MainNav from './navbar';
 
-class AppRoot extends Component {
+class Home extends Component {
    render() {
       return (
-         <div className='app'>
-            <main>
-               <MainNav />
-               <h1>Welcome to The Chris Times</h1>
-               {this.props.children}
-            </main>
-         </div>
+         <main>
+            <Link to='test'>Welcome to The Chris Times</Link>
+            <div>Content goes here</div>
+            <p>Hello</p>
+         </main>
       );
    }
 }
 
-export default AppRoot;
+export default Home;
