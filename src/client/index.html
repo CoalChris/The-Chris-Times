@@ -4,9 +4,29 @@
       <title>The Chris Times</title>
       <meta charset="utf-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-      <link rel="stylesheet" href="../public/bootstrap.min.css">
+      <link rel="stylesheet" href="../public/styles/bootstrap.min.css">
+      <link rel='stylesheet' type='text/css' href="../public/styles/roboto.css">
+      <link rel='stylesheet' type='text/css' href="../public/styles/berkshire-swash.css">
+      <link rel="stylesheet" type="text/css" href="../public/styles/index.css">
+      <!--JQuery Library-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="jquery.js"></script>
+      <!--YouTube API-->
+      <script src="https://apis.google.com/js/platform.js"></script>
    </head>
    <body>
+      <!--Facebook API-->
+      <div id="fb-root"></div>
+      <script>
+         (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+            fjs.parentNode.insertBefore(js, fjs);
+         } (document, 'script', 'facebook-jssdk'));
+      </script>
       <main id='root'>
 
       </main>

@@ -1,23 +1,23 @@
 import React, {Component} from 'react';
-import { Navbar, Nav, NavDropdown, NavItem, MenuItem } from 'react-bootstrap';
+import { Navbar, Row, Nav, NavDropdown, NavItem, MenuItem } from 'react-bootstrap';
 import {LinkContainer} from 'react-router-bootstrap';
 
 class MainNav extends Component {
    render() {
       return (
-         <Navbar inverse collapseOnSelect className='container-fluid'>
-            <div className='row'>
-               <Navbar.Header className='col-sm-2'>
+         <Navbar inverse collapseOnSelect fluid className='main-nav'>
+            <Row>
+               <Navbar.Header className='col-sm-1'>
                   <Navbar.Brand>
                      <LinkContainer to='/'><a>TCT</a></LinkContainer>
                   </Navbar.Brand>
                   <Navbar.Toggle />
                </Navbar.Header>
-               <Navbar.Collapse>
+               <Navbar.Collapse className='navbar-collapse'>
                   <Nav>
                      <NavItem eventKey={1}><LinkContainer to='/posts'><div>One</div></LinkContainer></NavItem>
                      <NavItem eventKey={2}><LinkContainer to='/test'><div>Two</div></LinkContainer></NavItem>
-                     <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+                     <NavDropdown eventKey={3} title="Dropdown" id='main-nav-dropdown'>
                         <MenuItem eventKey={3.1}>Action</MenuItem>
                         <MenuItem eventKey={3.2}>Another action</MenuItem>
                         <MenuItem eventKey={3.3}>Something else here</MenuItem>
@@ -30,7 +30,7 @@ class MainNav extends Component {
                      <NavItem eventKey={2}><LinkContainer to='#'><div>Right</div></LinkContainer></NavItem>
                   </Nav>
                </Navbar.Collapse>
-            </div>
+            </Row>
          </Navbar>
       );
    }
