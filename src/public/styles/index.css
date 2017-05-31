@@ -11,7 +11,7 @@ body {
    height: 3em;
    position: fixed;
    width: 100%;
-   z-index: 1;
+   z-index: 2;
    font-family: "Roboto", sans-serif;
    font-weight: 300;
    font-size: 2rem;
@@ -60,10 +60,23 @@ header h1 a:hover, header h1 a:link, header h1 a:visited {
    width: 100%;
    text-shadow: 0.75px 4px 2px black;
    font-family: "Berkshire Swash", "Monotype Corsiva", Papyrus, "Comic Sans MS", "Comic Sans", cursive;
+   position: relative;
+   z-index: 1;
 }
 
 .home-jumbotron img {
    margin: auto;
+}
+
+.posts {
+   padding-top: 7em;
+   margin: auto;
+   font-family: Helvetica, Arial, sans-serif;
+}
+
+.posts-title {
+   margin-left: 0.5em;
+   margin-bottom: 0.7em;
 }
 
 /*.jumbotron #jumbotext {
@@ -286,7 +299,7 @@ article img {
    border-radius: 5px;
 }
 
-/*.more {
+.more {
    height: 1.8em;
    width: 7em;
    margin: 0 auto;
@@ -306,13 +319,23 @@ article img {
    color: white;
 }
 
+.more-link {
+  color: black;
+}
+
+.more-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
 .text {
   -webkit-transition: 0.75s linear all;
   transition: 0.75s linear all;  
   opacity: 1;
+  display: none;
 }
 
-.text.ng-hide {
+/*.text.ng-hide {
   opacity: 0;
 }
 */
@@ -356,7 +379,6 @@ footer {
    height: 45px;
    width: 100%;
    padding: 12px 0;
-   text-align: center;
    background: rgba(0, 0, 0, 0.8);
    color: white;
    position: fixed;
@@ -444,6 +466,11 @@ footer li img:hover {
 
 /* content section */
 @media screen and (max-width: 634px) {
+   .posts {
+      padding-left: 2%;
+      padding-right: 2%;
+   }
+
    .sidebar {
       margin-bottom: 40px;
    }
@@ -462,6 +489,11 @@ footer li img:hover {
 }
 
 @media screen and (min-width: 635px) and (max-width: 1200px) {
+   .posts {
+      padding-left: 10%;
+      padding-right: 10%;
+   }
+
    .sidebar {
       margin-bottom: 40px;
    }
@@ -486,6 +518,11 @@ footer li img:hover {
 }
 
 @media screen and (min-width: 1201px) {
+   .posts {
+      padding-left: 25%;
+      padding-right: 10%;
+   }
+
    .articles {
       float: left;
       width: 70%;

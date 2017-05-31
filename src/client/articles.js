@@ -1,25 +1,28 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
+
+import stories from '../public/stories';
 
 class Articles extends Component {
    render() {
+      var listArticles = stories.map(function(story) {
+         return (
+            <article key={story.id}>
+               <h1 className='title'>{story.title}</h1>
+               <p className='date'>{story.date}</p>
+               <img className='image' src={'img/' + story.image}/>
+               <p className='blurb'>{story.blurb}</p>
+               <p className='more'><Link className='more-link' to={'/posts/' + story.id}>Read More →</Link></p>
+            </article>
+         );
+      });
+
       return (
          <div className='articles'>
-            <article />
+            {listArticles}
          </div>
       );
    }
 }
 
 export default Articles;
-
-/*
-<div className='articles' infinite-scroll="loadMore()" infinite-scroll-distance="1" infinite-scroll-disabled="maxResults > numArticles">
-            <article ng-repeat="article in articles | filter: filterType | limitTo: maxResults">
-               <h1 class="title">{{ article.title }}</h2>
-               <p class="date">{{ article.date }}</p>
-               <img class="image" ng-src="{{ article.image }}">
-               <p class="blurb">{{ article.blurb }}</p>
-               <p class="more" ng-click="showText = !showText; filter('more')" ng-show="!showText">Read More →</p>
-               <p class="text" ng-show="showText" ng-bind-html="article.text"/>
-            </article>
-         </div>*/

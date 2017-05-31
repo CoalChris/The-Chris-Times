@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import MainNav from './navbar';
 import Home from './home';
-import BreadcrumbNav from './breadcrumb';
+import Posts from './posts';
 import Test from './test';
 import ScrollUp from './scroll';
 import Footer from './footer';
@@ -14,7 +14,7 @@ var AppRouter = (
          <MainNav />
          <Switch>
             <Route exact path='/' component={Home} />
-            <Route path='/posts' component={BreadcrumbNav} />
+            <Route path='/posts' component={Posts} />
             <Route path='/test' component={Test} />
          </Switch>
          <ScrollUp />

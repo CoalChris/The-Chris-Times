@@ -15,7 +15,7 @@ class MainNav extends Component {
                </Navbar.Header>
                <Navbar.Collapse className='navbar-collapse'>
                   <Nav>
-                     <NavItem eventKey={1}><LinkContainer to='/posts'><div>One</div></LinkContainer></NavItem>
+                     <NavItem eventKey={1}><LinkContainer to='/posts'><div>Posts</div></LinkContainer></NavItem>
                      <NavItem eventKey={2}><LinkContainer to='/test'><div>Two</div></LinkContainer></NavItem>
                      <NavDropdown eventKey={3} title="Dropdown" id='main-nav-dropdown'>
                         <MenuItem eventKey={3.1}>Action</MenuItem>

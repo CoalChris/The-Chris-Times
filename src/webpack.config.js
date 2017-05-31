@@ -12,7 +12,7 @@ module.exports = {
          {
             test: /\.js$/,
             exclude: /nodule_modules/,
-            loader: 'babel-loader',
+            loader: 'babel-loader'
          }
       ]
    },
