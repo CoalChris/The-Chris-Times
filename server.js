@@ -10,12 +10,12 @@ import NotFound from './client/not-found';
 const app = new Express();
 
 // define the folder that will be used for static assets
-app.use(Express.static(path.resolve(__dirname, '/public')));
-app.use(Express.static(path.resolve(__dirname, '/build')));
+app.use(Express.static(path.join(__dirname, 'public')));
+app.use(Express.static(path.join(__dirname, 'build')));
 
 // universal routing
 app.get('*', (req, res) => { 
-   res.sendFile(path.resolve(__dirname, '/build/index.html')); 
+   res.sendFile(path.join(__dirname, 'build/index.html')); 
 }); 
 
 // start the server
