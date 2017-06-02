@@ -36,7 +36,7 @@ class ScrollUp extends Component {
       var toShow = {visibility: (this.state.show ? 'visible' : 'hidden')};
 
       return (
-         <img className='scroll-up' onClick={() => window.scrollTo(0, 0)} style={toShow} src='../public/img/up-arrow.png' />
+         <img className='scroll-up' onClick={() => window.scrollTo(0, 0)} style={toShow} src='img/up-arrow.png' />
       );
    }
 }

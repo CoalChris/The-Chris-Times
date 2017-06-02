@@ -6,7 +6,7 @@ class Sidebar extends Component {
          <div className='sidebar'>
             <div className='profile'>
                <div className='display-picture'>
-                  <img src='../public/img/profile.jpg' />
+                  <img src='img/profile.jpg' />
                </div>
                <p>
                   Hi, I'm Chris and welcome to my website. I am an avid follower of technology, Japanese culture, and the Christian faith. I'm based in Sydney, Australia, but love to travel all over the world! Hopefully you'll discover some interesting facts, have a good laugh at my stories, and be inspired to walk down a similarly awesome path!

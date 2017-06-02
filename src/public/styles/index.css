@@ -332,7 +332,6 @@ article img {
   -webkit-transition: 0.75s linear all;
   transition: 0.75s linear all;  
   opacity: 1;
-  display: none;
 }
 
 /*.text.ng-hide {

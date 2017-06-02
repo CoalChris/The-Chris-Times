@@ -8,21 +8,21 @@ class HomeJumbotron extends Component {
          <Jumbotron className='home-jumbotron'>
             <Carousel>
                <Carousel.Item>
-                  <img src='../public/img/sakura.jpg'/>
+                  <img src='./img/sakura.jpg'/>
                   <Carousel.Caption>
                      <h3>First slide label</h3>
                      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                   </Carousel.Caption>
                </Carousel.Item>
                <Carousel.Item>
-                  <img src='../public/img/platia.jpg'/>
+                  <img src='./img/platia.jpg'/>
                   <Carousel.Caption>
                      <h3>Second slide label</h3>
                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                   </Carousel.Caption>
                </Carousel.Item>
                <Carousel.Item>
-                  <img src='../public/img/easter.jpg'/>
+                  <img src='./img/easter.jpg'/>
                   <Carousel.Caption>
                      <h3>Third slide label</h3>
                      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
